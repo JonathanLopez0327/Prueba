@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax app</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="" class="navbar-brand">Prueba con ajax</a>
+
+        <ul class="navbar-nav ml-auto">
+            <form class="form-inline my-2 my-lg-0">
+                <input type="search" id="buscar" class="form-control mr-sm-2" placeholder="Buscar">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">
+                     Buscar
+                 </button>
+            </form>
+        </ul>
+    </nav>
+
+    <!-- Container -->
+
+    <div class="container mt-4 p-4">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+
+                        <form id="alumno-form">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Nombre" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="carrera" placeholder="Carrera" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="grupo" placeholder="Grupo" class="form-control">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                Guardar
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+
+                <div class="card mb-2" id="alumnos-result">
+                    <div class="card-body">
+                        <ul id="container"></ul>
+                    </div>
+                </div>
+
+                <table class="table table-sm">
+                    <thead class="bg-success text-white">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Carrera</th>
+                            <th>Grupo</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="dataTable"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main.js -->
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
